@@ -24,7 +24,16 @@ class Linkedlist:
             self.head= current
 
     def delete_head(self):
+        temp = self.head
+        self.head= self.head.next
+        temp=None
         
+
+    def insert_to_pos(self, value, pos):
+        if pos ==1:
+            newnode = Node(value)
+            self.head = newnode
+            
 
 
 
@@ -33,4 +42,6 @@ list1.head=Node("Tony Stark")
 list1.head.next= Node("Thor")
 list1.head.next.next=Node("Winter soldier")
 list1.add_to_head("Thanos")
+list1.traverse()
+list1.delete_head()
 list1.traverse()
