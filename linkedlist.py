@@ -27,12 +27,17 @@ class Linkedlist:
         temp = self.head
         self.head= self.head.next
         temp=None
+
+    def length_of(self):
+        current=self.head
+        total=0
+        while current is not None:
+            total=total+1
+            current= current.next
+        return total
         
 
-    def insert_to_pos(self, value, pos):
-        if pos ==1:
-            newnode = Node(value)
-            self.head = newnode
+    
             
 
 
@@ -45,3 +50,4 @@ list1.add_to_head("Thanos")
 list1.traverse()
 list1.delete_head()
 list1.traverse()
+print(list1.length_of())

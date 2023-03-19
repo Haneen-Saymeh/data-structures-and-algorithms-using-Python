@@ -10,4 +10,4 @@ def missingnum(list):
         if x not in list:
             print(x)
 
-missingnum([1,3,5,2,6,4,8,9,10])
+missingnum([1,3,5,2,6,4,8,10])
